@@ -10,7 +10,7 @@
 def greetings(first_name):
     print("Hello " + first_name)
 
-first_names = ['samir', 'sam', 'daniel', 'rachel']
+first_names = ['jack', 'sam', 'daniel', 'rachel']
 
 for index in range(0, 4):
     greetings(first_names[index])
