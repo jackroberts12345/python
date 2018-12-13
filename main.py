@@ -4,13 +4,39 @@
 # Last parameter: age
 
 # greetings('Samir', 'Chahine', 21)
-# "Hello Samir Chahine, you are 21 years old"def fname(arg):
+# def documents(downloads downloads= documents
+#                     print("error")
+
+def primes_sieve2(limit):
+    a = [True] * limit                          # Initialize the primality list
+    a[0] = a[1] = False
+
+    primes = []
+
+    for (number, isprime) in enumerate(a):
+        if isprime:
+            primes.append(number)
+
+            for n in range(number*number, limit, number):     # Mark factors non-prime
+                a[n] = False
+
+    print(sum(primes))
 
 
-def greetings(first_name):
-    print("Hello " + first_name)
+primes_sieve2(2000000)
 
-first_names = ['jack', 'sam', 'daniel', 'rachel']
-
-for index in range(0, 4):
-    greetings(first_names[index])
+# def primes_sieve2(limit):
+#  a = [True] * limit                          # Initialize the primality list
+#  a[0] = a[1] = False
+#
+#     # 1. make empty list for primes
+# (primes):[]
+# for (number, isprime) in enumerate('a'):
+#         if isprime:
+#             # 2. add number to the list
+#             prime.append(number)
+#
+#             for n in range(number*number, limit, number):     # Mark factors non-prime
+#                 a[n] = False
+#         # 3. print the sum of the list
+#         print(primes[number])
